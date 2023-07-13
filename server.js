@@ -9,5 +9,10 @@ app.get("/",(req,res)=>{
     })
 
 })
+app.get("/",(req,res)=>{
+    res.status(200).json({
+        message:"hello world"
+    })
 
+})
 app.listen(PORT, () => console.log(`server is runing in port ${PORT}`))
